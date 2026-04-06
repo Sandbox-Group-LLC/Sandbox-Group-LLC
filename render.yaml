@@ -2,6 +2,7 @@ services:
   - type: web
     name: sandbox-group-llc
     runtime: static
+    buildCommand: ""
     staticPublishPath: .
     pullRequestPreviewsEnabled: true
     headers:
