@@ -1,8 +1,7 @@
 services:
-  - type: web
+  - type: static
     name: sandbox-group-llc
-    runtime: static
-    buildCommand: echo "no build needed"
+
     staticPublishPath: .
     pullRequestPreviewsEnabled: true
     headers:
