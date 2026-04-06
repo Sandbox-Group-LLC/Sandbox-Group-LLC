@@ -1,0 +1,13 @@
+{
+  "name": "sandbox-group-llc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sandbox Group LLC landing page — static site served by a zero-dependency Node HTTP server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
