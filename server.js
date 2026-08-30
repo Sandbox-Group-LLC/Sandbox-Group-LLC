@@ -58,22 +58,9 @@ function sendFile(res, filePath, statusCode = 200) {
 }
 
 function sendNotFound(res) {
-  const fallback = path.join(ROOT, 'index.html');
-  fs.stat(fallback, (err, stat) => {
-    if (err || !stat.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain', ...SECURITY_HEADERS });
-      res.end('Not Found');
-      return;
-    }
-    // SPA-style fallback: rewrite to index.html with 200.
-    res.writeHead(200, {
-      'Content-Type': 'text/html; charset=utf-8',
-      'Content-Length': stat.size,
-      'Cache-Control': 'no-cache',
-      ...SECURITY_HEADERS,
-    });
-    fs.createReadStream(fallback).pipe(res);
-  });
+  // Real 404. Do not SPA-fallback missing article URLs to the homepage.
+  res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8', ...SECURITY_HEADERS });
+  res.end('Not Found');
 }
 
 const server = http.createServer((req, res) => {
