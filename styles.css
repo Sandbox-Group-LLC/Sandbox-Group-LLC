@@ -1,5 +1,5 @@
 /* ============================================================
-   Sandbox Group LLC — Landing Page Styles
+   Sandbox Group LLC | Landing Page Styles
    Light mode only · Institutional aesthetic
    ============================================================ */
 
@@ -313,10 +313,34 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transition: background 0.25s;
+  transition: background 0.25s, box-shadow 0.25s;
+  color: inherit;
+  text-decoration: none;
 }
 
-.brand-card:hover { background: var(--off-white); }
+a.brand-card:hover {
+  background: var(--off-white);
+  text-decoration: none;
+}
+
+a.brand-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.brand-card__cta {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+a.brand-card:hover .brand-card__cta {
+  color: var(--accent);
+}
 
 .brand-card__logo {
   height: 48px;
@@ -788,6 +812,7 @@ a:hover { text-decoration: underline; }
   text-align: right;
 }
 
+.footer__companies a,
 .footer__companies span {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.4);
@@ -795,9 +820,19 @@ a:hover { text-decoration: underline; }
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
-.footer__companies span:hover { color: rgba(255,255,255,0.8); }
+.footer__companies a:hover,
+.footer__companies span:hover {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.footer__companies a:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
+}
 
 .footer__bottom {
   max-width: var(--max-w);
