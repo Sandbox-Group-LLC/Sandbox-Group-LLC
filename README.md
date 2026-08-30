@@ -1,4 +1,4 @@
-# Sandbox Group LLC — Landing Page
+# Sandbox Group LLC | Landing Page
 
 Sandbox Group LLC is the parent company to Sandbox-GTM, Sandbox-XM, FORGE by Sandbox, and Forge Intelligence.
 
@@ -7,7 +7,7 @@ Sandbox Group LLC is the parent company to Sandbox-GTM, Sandbox-XM, FORGE by San
 | File | Purpose |
 |---|---|
 | `index.html` | Main landing page (single-file, no build step) |
-| `styles.css` | Stylesheet — light mode only, institutional design |
+| `styles.css` | Stylesheet. Light mode only, institutional design |
 | `assets/` | Place company logo files here (see below) |
 
 ## Adding Logos
@@ -35,7 +35,7 @@ python3 -m http.server 8080
 
 ## Design notes
 
-- **Persistently light mode** — `color-scheme: light` is set on `<html>`; no dark-mode media queries exist.
+- **Persistently light mode.** `color-scheme: light` is set on `<html>`; no dark-mode media queries exist.
 - Typography: [Inter](https://fonts.google.com/specimen/Inter) (sans) + [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (display), loaded from Google Fonts.
 - Palette: white/off-white backgrounds, deep navy (`#0B1F3A`) primary, warm gold (`#C8A96E`) accent.
-- No JavaScript — fully static, zero dependencies.
+- No JavaScript. Fully static, zero dependencies.
