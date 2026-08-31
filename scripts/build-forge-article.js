@@ -4,6 +4,8 @@
 
 "use strict";
 
+const { buildArticleCompaniesCta } = require("./article-companies-cta.js");
+
 function esc(s) {
   return String(s == null ? "" : s)
     .replace(/&/g, "\u0026amp;")
@@ -108,6 +110,9 @@ function buildArticleHtml(payload) {
       : "",
     '      <div class="article__body container">',
     "        " + body,
+    "      </div>",
+    '      <div class="container">',
+    "        " + buildArticleCompaniesCta(),
     "      </div>",
     "    </article>",
     "  </main>",
