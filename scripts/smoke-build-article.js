@@ -9,7 +9,13 @@ const html = buildArticleHtml({
   publishedAt: "2026-08-30T12:00:00.000Z",
 });
 fs.writeFileSync("/tmp/sample-article.html", html);
-if (!html.includes("Sample ops note") || !html.includes("article-tldr")) {
+if (
+  !html.includes("Sample ops note") ||
+  !html.includes("article-tldr") ||
+  !html.includes("article-cta") ||
+  !html.includes("sandbox-gtm.com") ||
+  !html.includes("Continue across the companies")
+) {
   console.error("smoke failed");
   process.exit(1);
 }

@@ -1080,3 +1080,117 @@ a.brand-card:hover .brand-card__cta {
   .brand-card { padding: 36px 28px; }
   .article__header { padding-top: 48px; }
 }
+
+/* ---------- Article end CTA (child companies) ---------- */
+.article-cta {
+  margin: 56px 0 8px;
+  padding: 40px 36px;
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.article-cta__eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.article-cta__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.article-cta__lede {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-light);
+  max-width: 42rem;
+  margin: 0 0 28px;
+}
+
+.article-cta__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .article-cta {
+    padding: 32px 24px;
+  }
+
+  .article-cta__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-cta__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 18px;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.article-cta__card:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(11, 31, 58, 0.06);
+  transform: translateY(-1px);
+}
+
+.article-cta__card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.article-cta__category {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.article-cta__name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.article-cta__blurb {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-light);
+  margin: 0;
+  flex: 1;
+}
+
+.article-cta__link {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.article-cta__card:hover .article-cta__link {
+  color: var(--accent);
+}
