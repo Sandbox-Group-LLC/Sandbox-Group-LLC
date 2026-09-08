@@ -1,5 +1,12 @@
 [
   {
+    "slug": "closed-loop-event-attribution-for-b2b-revenue-teams-the-hubspot-data-model-that-satisfies-a-cfo",
+    "title": "Closed-Loop Event Attribution for B2B Revenue Teams: The HubSpot Data Model That Satisfies a CFO",
+    "excerpt": "A CFO-ready HubSpot data model for event attribution: five contact properties, campaign cost fields, and a 90-day sourced-pipeline formula.",
+    "publishedAt": "2026-09-08T05:48:46.570Z",
+    "heroImageUrl": "https://v3b.fal.media/files/b/0aa98f38/15MJXJrZm45unC1f6ywmv_aDCqTpYI.jpg"
+  },
+  {
     "slug": "hubspot-event-integration-architecture-the-four-layer-data-model-that-closes-the-revenue-loop",
     "title": "HubSpot Event Integration Architecture: The Four-Layer Data Model That Closes the Revenue Loop",
     "excerpt": "Most HubSpot event integrations lose pipeline signal at each handoff. This four-layer data model shows the object mapping that closes the loop.",
